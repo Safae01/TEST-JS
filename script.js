@@ -197,10 +197,14 @@ console.log(filt)
 
 let myString = "1,2,3,EE,l,z,e,r,o,_,W,e,b,_,S,c,h,o,o,l,2,0,Z";
 let solution = myString.split("").filter(function(ele){
-    return isNaN(parseInt(ele))? ele : "";
-})
-// .map(function(ele){
-
-// })
-
+    return isNaN(parseInt(ele));
+}).join("");
 console.log(solution); // Elzero Web School
+//******************************* DOM ***************************** */
+//exple1
+let divv = document.createElement("div");
+let h22 = document.createElement("h2");
+let pp = document.createElement("p");
+divv.className="product";
+document.body.appendChild(divv);
+
