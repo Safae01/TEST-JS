@@ -1,8 +1,8 @@
-var title ="safae benmouna"
+var titre ="safae benmouna"
 , description="belle"
 , age= 21 , cc= `
     <div class="card">
-    <h3>${title}</h3>
+    <h3>${titre}</h3>
     <p>${description}</p>
     <span>${age}</span>
     </div>
@@ -207,4 +207,72 @@ let h22 = document.createElement("h2");
 let pp = document.createElement("p");
 divv.className="product";
 document.body.appendChild(divv);
+
+//exple2 
+
+// let user = document.querySelector(".user");
+// let years = document.querySelector(".age");                                                                             
+
+
+//     user.focus();
+
+// user.addEventListener("input",function(){
+//     if(user.value.length===4){
+//         years.focus()
+//     }
+// });
+window.addEventListener("load", function() {
+    let user = document.querySelector(".user");
+    let years = document.querySelector(".age");
+
+    // Mettre le focus sur le premier champ
+    user.focus();
+
+    // Ajouter un écouteur d'événement pour l'input
+    user.addEventListener("input", function() {
+        // Si la longueur du texte dans le champ est de 4 caractères, changer le focus
+        if (user.value.length === 4) {
+            years.focus();
+        }
+    });
+});
+// ********************* scrroll ******************************
+let btn = document.querySelector(".btn");
+
+window.onscroll= function(){
+
+    if (window.scrollY>= 200){
+        btn.style.display='block'
+    }else{
+        btn.style.display='none'
+
+    }
+};
+btn.onclick = function () {
+    window.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
+// ****************************** Destructuring chhaleng ******************************************************************
+
+let chosen = 3;
+
+let myFriends = [
+  { title: "Osama", agee: 39, available: true, skills: ["HTML", "CSS"] },
+  { title: "Ahmed", agee: 25, available: false, skills: ["Python", "Django"] },
+  { title: "Sayed", agee: 33, available: true, skills: ["PHP", "Laravel"] },
+];
+
+// Destructuration de l'objet correspondant à chosen
+let { title, agee, available, skills: [b] } = myFriends[chosen - 1];
+
+// Affichagee des données destructurées
+console.log(`Nom: ${title}`);
+console.log(`Âge: ${agee}`);
+console.log(`Disponible: ${available ? "Oui" : "Non"}`);
+console.log(`Première compétence: ${b}`);
+
 
