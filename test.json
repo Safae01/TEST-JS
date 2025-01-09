@@ -1,0 +1,15 @@
+{
+    "africa": {
+      "morocco": ["Casablanca", "Rabat"],
+      "egypt": ["Cairo", "Alexandria"]
+    },
+    "europe": {
+      "france": ["Paris", "Lyon"],
+      "germany": ["Berlin", "Munich"]
+    },
+    "asia": {
+      "japan": ["Tokyo", "Osaka"],
+      "india": ["Delhi", "Mumbai"]
+    }
+}
+  

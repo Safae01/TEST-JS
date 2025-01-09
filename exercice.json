@@ -1,0 +1,39 @@
+{
+    "action": [
+      {
+        "titre": "Die Hard",
+        "realisateur": "John McTiernan",
+        "annee": 1988
+      },
+      {
+        "titre": "Mad Max: Fury Road",
+        "realisateur": "George Miller",
+        "annee": 2015
+      }
+    ],
+    "comedy": [
+      {
+        "titre": "The Grand Budapest Hotel",
+        "realisateur": "Wes Anderson",
+        "annee": 2014
+      },
+      {
+        "titre": "Superbad",
+        "realisateur": "Greg Mottola",
+        "annee": 2007
+      }
+    ],
+    "drama": [
+      {
+        "titre": "Forrest Gump",
+        "realisateur": "Robert Zemeckis",
+        "annee": 1994
+      },
+      {
+        "titre": "The Shawshank Redemption",
+        "realisateur": "Frank Darabont",
+        "annee": 1994
+      }
+    ]
+  }
+  

@@ -275,4 +275,31 @@ console.log(`Âge: ${agee}`);
 console.log(`Disponible: ${available ? "Oui" : "Non"}`);
 console.log(`Première compétence: ${b}`);
 
+// ùùùùùùùùùùùùùùùùùùùùùùùùùùùùùù map and  set challlllllllenge   ///////////////////////////////////////////////////////////////////////////
 
+let n1 = [10, 30, 10, 20];
+let n2 = [30, 20, 10];
+
+console.log(Math.max(...n1)*[...n1,...n2].length);
+
+
+// ***************************** regular expression challenge *****************************************
+
+/*
+  Regular Expression
+  - Challenge
+*/
+
+let url1 = 'elzero.org';
+let url2 = 'http://elzero.org';
+let url3 = 'https://elzero.org';
+let url4 = 'https://www.elzero.org';
+let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
+
+let re = /^(https?:\/\/)?(www.)?\w+.\w+(:\d{4}\/\w+.\w+\?)?/ig;
+
+console.log(url1.match(re));
+console.log(url2.match(re));
+console.log(url3.match(re));
+console.log(url4.match(re));
+console.log(url5.match(re));
