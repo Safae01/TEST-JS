@@ -9,8 +9,6 @@ fetch('exercice.json')
         option.value=type;
         option.textContent=type;
         types.appendChild(option);
-
-        
     });
 
     types.addEventListener('change',()=>{
@@ -23,15 +21,19 @@ fetch('exercice.json')
             names.appendChild(option);
         });
     })
+
     names.addEventListener('change',()=>{
-        
-        const name = names.value;
-        const type=types.value
-        let info=document.getElementById('info')
-        data[type].forEach(name => {
-            const p = document.createElement('p')
-            p.textContent=name.realisateur
-            info.appendChild(p)
+        const selectedTitle = names.value;
+        const type = types.value;
+        let info = document.getElementById('info');
+        info.innerHTML = ''; 
+
+        data[type].forEach(movie => {
+            if(movie.titre === selectedTitle) {
+                const p = document.createElement('p');
+                p.textContent = movie.realisateur;
+                info.appendChild(p);
+            }
         });
     })
 })
